@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <img src="assets/hamburger.svg" class="hamburger invert" height="50" width="50" alt="">
+            <img class="logo" src="assets/logo.svg" height="40px" alt="Logo">
+        </div>
+        <div class="buttons">
+            <button class="signup">Sign up</button>
+            <button class="login">Log in</button>
+        </div>
+        </div> <!-- closed navbar -->
+    </header>
+
+    <div class="container">
+        <div class="left">
+            <div class="box1">
+
+            </div>
+            <div class="library">
+                <p>Your Library</p>
+                <img src="assets/cross.svg" height="30" class="invert cross" alt="">
+                <div class="song-list">
+                    <ul>
+                    </ul>
+                </div>
+
+                <div class="footer">
+                    <a href="https://www.spotify.com/pk-en/legal/">Legal</a><br>
+                    <a href="https://www.spotify.com/pk-en/safetyandprivacy/">Safety & Privacy Center</a><br>
+                    <a href="https://www.spotify.com/pk-en/legal/privacy-policy/">Privacy Policy</a><br>
+                    <a href="https://www.spotify.com/pk-en/legal/cookies-policy/">Cookies</a><br>
+                    <span>
+                        <a href="https://www.spotify.com/pk-en/legal/privacy-policy/#s3">About Ads</a><br>
+                        <a href="https://www.spotify.com/pk-en/accessibility/">Accessibility</a><br>
+                    </span>
+                    <p>
+                        <a href="https://www.spotify.com/legal/cookies-policy/" target="_blank"
+                            rel="noopener">Cookies</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="spotifyplaylists">
+                <h1>Spotify Playlists</h1>
+                <div class="cardcontainer">
+                    
+                </div>
+                <div class="playbar invert">
+                    <div class="seek-bar">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="detail-bar">
+                        <div class="songname"></div>
+                        <div class="songbuttons">
+                            <button id="previous" class="prev-song  "><img height="25px" src="assets/prevsong.svg"
+                                    alt="prev"></button>
+                            <button id="play" class="song-play "><img height="25px" src="assets/play.svg"
+                                    alt="play"></button>
+                            <button id="next" class="next-song "><img height="25px" src="assets/nextsong.svg"
+                                    alt="next"></button>
+                        </div>
+                        <div class="duration">
+                            <div class="songtime"></div>
+                            <div class="volume">
+                                <img class="vol" width="25" src="assets/volume.svg" alt="">
+                                <div class="range invert">
+                                    <input type="range" name="volume">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>
